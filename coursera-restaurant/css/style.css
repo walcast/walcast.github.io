@@ -1,10 +1,44 @@
+:root {
+    --primary-color: #faffff;
+    --secondary-color: #b9e4df;
+    --tertiary-color: #239089;
+}
 body {
     font-size: 16px;
-    color: white;
-    background-color: lightgrey;
+    background-color: var(--primary-color);
 }
 
-#header-nav {
-    background-color: lightblue;
+a, a:hover, a:visited, a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand h1 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 0.25em;
+    color: var(--tertiary-color);
+    text-shadow: 1px 1px 1px #222;
+}
+
+.navbar a {
+    text-align: center;
+}
+
+.navbar i {
+    font-size: 1.8em;
+    color: var(--tertiary-color);
+}
+
+.navbar {
+    background-color: var(--secondary-color);
     border: 0;
+}
+
+#phone-number {
+    padding-top: 1em;
+}
+#phone-number span {
+    font-size: 0.8em;
+    float: right;
 }
