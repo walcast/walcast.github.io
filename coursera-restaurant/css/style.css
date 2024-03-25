@@ -1,0 +1,10 @@
+body {
+    font-size: 16px;
+    color: white;
+    background-color: lightgrey;
+}
+
+#header-nav {
+    background-color: lightblue;
+    border: 0;
+}
