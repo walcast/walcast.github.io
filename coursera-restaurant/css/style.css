@@ -1,7 +1,7 @@
 :root {
     --primary-color: #faffff;
-    --secondary-color: #b9e4df;
-    --tertiary-color: #239089;
+    --secondary-color: #f1ac18;
+    --tertiary-color: #cc080b;
 }
 body {
     font-size: 16px;
@@ -16,9 +16,9 @@ a, a:hover, a:visited, a:focus {
     font-size: 1.25em;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 0.25em;
     color: var(--tertiary-color);
     text-shadow: 1px 1px 1px #222;
+    margin-bottom: 0px;
 }
 
 .navbar a {
