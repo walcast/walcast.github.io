@@ -1,14 +1,19 @@
 :root {
-    --primary-color: #faffff;
-    --secondary-color: #f1ac18;
-    --tertiary-color: #cc080b;
-}
-body {
-    font-size: 16px;
-    background-color: var(--primary-color);
+    --one-color: #d9d8c2;
+    --two-color: #73c487;
+    --three-color: #fece00;
+    --fourt-color: #bc0032;
 }
 
-a, a:hover, a:visited, a:focus {
+body {
+    font-size: 16px;
+    background-color: var(--one-color);
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
     text-decoration: none;
 }
 
@@ -16,9 +21,9 @@ a, a:hover, a:visited, a:focus {
     font-size: 1.25em;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--tertiary-color);
-    text-shadow: 1px 1px 1px #222;
+    text-shadow: 1px 1px 1px var(--fourt-color);
     margin-bottom: 0px;
+    color: var(--fourt-color);
 }
 
 .navbar a {
@@ -27,18 +32,68 @@ a, a:hover, a:visited, a:focus {
 
 .navbar i {
     font-size: 1.8em;
-    color: var(--tertiary-color);
+    color: var(--fourt-color);
 }
 
 .navbar {
-    background-color: var(--secondary-color);
+    background-color: var(--two-color);
     border: 0;
+}
+
+.card-img {
+    object-fit: cover;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#main-content button {
+    background-color: var(--three-color);
 }
 
 #phone-number {
     padding-top: 1em;
 }
+
 #phone-number span {
     font-size: 0.8em;
     float: right;
+}
+
+#jumbotron {
+    background: url(../img/jumb/min.jpg) no-repeat;
+    height: 150px;
+    box-shadow: 0 0 5px var(--three-color);
+    border: 1px solid var(--fourt-color);
+}
+
+@media (min-width: 768px) {
+    #jumbotron {
+        background: url(../img/jumb/768.jpg) no-repeat;
+        height: 250px;
+        box-shadow: 0 0 5px var(--three-color);
+    }
+}
+
+@media (min-width: 992px) {
+    #jumbotron {
+        background: url(../img/jumb/992.jpg) no-repeat;
+        height: 350px;
+        box-shadow: 0 0 5px var(--three-color);
+    }
+}
+
+@media (min-width: 1200px) {
+    #jumbotron {
+        background: url(../img/jumb/1200.jpg) no-repeat;
+        height: 450px;
+        box-shadow: 0 0 5px var(--three-color);
+    }
+}
+
+@media (min-width: 1400px) {
+    #jumbotron {
+        background: url(../img/jumb/max.jpg) no-repeat;
+        height: 550px;
+        box-shadow: 0 0 5px var(--three-color);
+    }
 }
