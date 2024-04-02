@@ -7,7 +7,6 @@
 
 body {
     font-size: 16px;
-    background-color: var(--one-color);
 }
 
 a,
@@ -17,11 +16,18 @@ a:focus {
     text-decoration: none;
 }
 
+footer h5 {
+    color: var(--fourt-color);
+}
+
+footer>div>div:nth-child(3) {
+    font-style: italic;
+}
+
 .navbar-brand h1 {
     font-size: 1.25em;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px 1px var(--fourt-color);
     margin-bottom: 0px;
     color: var(--fourt-color);
 }
@@ -36,18 +42,18 @@ a:focus {
 }
 
 .navbar {
-    background-color: var(--two-color);
     border: 0;
 }
 
-.card-img {
-    object-fit: cover;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.card h2 {
+    font-size: 1.15em;
 }
 
-#main-content button {
-    background-color: var(--three-color);
+.card,
+.card-img,
+.card-footer {
+    object-fit: cover;
+    border-radius: unset !important;
 }
 
 #phone-number {
@@ -62,15 +68,30 @@ a:focus {
 #jumbotron {
     background: url(../img/jumb/min.jpg) no-repeat;
     height: 150px;
-    box-shadow: 0 0 5px var(--three-color);
-    border: 1px solid var(--fourt-color);
+}
+
+#categories .card-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: unset;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#categories>div:nth-child(odd) .card {
+    background: url(../img/cate/1.jpg) no-repeat;
+    height: 150px;
+}
+
+#categories>div:nth-child(even) .card {
+    background: url(../img/cate/2.jpg) no-repeat;
+    height: 150px;
 }
 
 @media (min-width: 768px) {
     #jumbotron {
         background: url(../img/jumb/768.jpg) no-repeat;
         height: 250px;
-        box-shadow: 0 0 5px var(--three-color);
     }
 }
 
@@ -78,7 +99,6 @@ a:focus {
     #jumbotron {
         background: url(../img/jumb/992.jpg) no-repeat;
         height: 350px;
-        box-shadow: 0 0 5px var(--three-color);
     }
 }
 
@@ -86,7 +106,6 @@ a:focus {
     #jumbotron {
         background: url(../img/jumb/1200.jpg) no-repeat;
         height: 450px;
-        box-shadow: 0 0 5px var(--three-color);
     }
 }
 
@@ -94,6 +113,11 @@ a:focus {
     #jumbotron {
         background: url(../img/jumb/max.jpg) no-repeat;
         height: 550px;
-        box-shadow: 0 0 5px var(--three-color);
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        text-align: center;
     }
 }
