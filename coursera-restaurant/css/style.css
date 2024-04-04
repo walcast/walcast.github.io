@@ -9,10 +9,7 @@ body {
     font-size: 16px;
 }
 
-a,
-a:hover,
-a:visited,
-a:focus {
+a{
     text-decoration: none;
 }
 
@@ -45,17 +42,6 @@ footer>div>div:nth-child(3) {
     border: 0;
 }
 
-.card h2 {
-    font-size: 1.15em;
-}
-
-.card,
-.card-img,
-.card-footer {
-    object-fit: cover;
-    border-radius: unset !important;
-}
-
 #phone-number {
     padding-top: 1em;
 }
@@ -67,24 +53,6 @@ footer>div>div:nth-child(3) {
 
 #jumbotron {
     background: url(../img/jumb/min.jpg) no-repeat;
-    height: 150px;
-}
-
-#categories .card-header {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: unset;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
-#categories>div:nth-child(odd) .card {
-    background: url(../img/cate/1.jpg) no-repeat;
-    height: 150px;
-}
-
-#categories>div:nth-child(even) .card {
-    background: url(../img/cate/2.jpg) no-repeat;
     height: 150px;
 }
 
