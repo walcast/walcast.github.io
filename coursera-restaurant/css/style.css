@@ -52,34 +52,36 @@ footer>div>div:nth-child(3) {
 }
 
 #jumbotron {
-    background: url(../img/jumb/min.jpg) no-repeat;
+    background-image: url(../img/jumb/min.jpg);
     height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
     #jumbotron {
-        background: url(../img/jumb/768.jpg) no-repeat;
+        background-image: url(../img/jumb/768.jpg);
         height: 250px;
     }
 }
 
 @media (min-width: 992px) {
     #jumbotron {
-        background: url(../img/jumb/992.jpg) no-repeat;
+        background-image: url(../img/jumb/992.jpg);
         height: 350px;
     }
 }
 
 @media (min-width: 1200px) {
     #jumbotron {
-        background: url(../img/jumb/1200.jpg) no-repeat;
+        background-image: url(../img/jumb/1200.jpg);
         height: 450px;
     }
 }
 
 @media (min-width: 1400px) {
     #jumbotron {
-        background: url(../img/jumb/max.jpg) no-repeat;
+        background-image: url(../img/jumb/max.jpg);
         height: 550px;
     }
 }
